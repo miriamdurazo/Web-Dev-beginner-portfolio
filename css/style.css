@@ -1,0 +1,112 @@
+:root {
+    /* --main-color: rgb(73, 21, 196); */
+    --purple: #4a3c8a;
+    --dark-blue: rgb(19, 19, 78);
+    --light: rgb(165, 187, 206);
+    --bckgrnd-col: rgba(102, 184, 216, 0.705);
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-blue);
+    }
+
+  #navBar h1 {
+    width: 25%;
+    font-weight: 500;
+    color: var(--light);
+    background-color: var(--bckgrnd-col);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  #navigation {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: flex-end;
+   }
+   
+   #navigation a {
+     cursor: pointer;
+     text-decoration: underline;
+     text-decoration-thickness: 0.175em;
+     padding: 25px;
+     color: var(--light);
+   }
+
+   .hero-banner {
+      height: 230px;
+      background-image: url("../images/02-hero-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+    }
+
+    .hero-banner h2 {
+        color: rgb(44, 44, 204);
+        background-color: var(--bckgrnd-col);
+        text-align: right;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .page-wrapper {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "about aboutText aboutText"
+        "work workText workText"
+        "work workText workText"
+        "contact contactText contactText"
+        ;
+      }
+
+      #about {
+        grid-area: about;
+      }
+
+      #aboutText {
+        grid-area: aboutText;
+      }
+
+      #work {
+        grid-area: work;
+      }
+
+      #contact {
+        grid-area: contact;
+      }
+
+      
