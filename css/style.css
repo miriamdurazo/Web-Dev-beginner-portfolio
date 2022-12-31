@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
   }
   
   h1,
@@ -27,6 +26,7 @@
   
   p {
     margin: 0;
+    line-height: 1.25;
   }
 
   #navBar {
@@ -83,13 +83,12 @@
     .page-wrapper {
         margin: 0px 5%;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 50% 10%;
+        grid-template-columns: 20% 80%;
         grid-template-areas:
-        "about aboutText aboutText"
-        "work workText workText"
-        "work workText workText"
-        "contact contactText contactText"
+        "about aboutText"
+        "work workText"
+        "contact contactText"
         ;
       }
 
@@ -109,4 +108,33 @@
         grid-area: contact;
       }
 
-      
+      #contactText {
+        grid-area: contactText;
+      }
+
+      .page-section {
+        border-right: 0.25rem solid var(--dark-blue);
+        margin: 1rem 0 1rem 0;
+      }
+
+      .subheading-left {  
+        font-size: 2.5rem;
+        text-align: end;
+        padding: 0.5rem;
+        color: var(--dark-blue);
+      }
+
+      #aboutText {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      #contactText {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+    
