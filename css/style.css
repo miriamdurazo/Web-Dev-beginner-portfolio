@@ -87,7 +87,7 @@
         grid-template-columns: 20% 80%;
         grid-template-areas:
         "about aboutText"
-        "work workText"
+        "work workContent"
         "contact contactText"
         ;
       }
@@ -102,6 +102,10 @@
 
       #work {
         grid-area: work;
+      }
+
+      .workContent {
+        grid-area: workContent;
       }
 
       #contact {
@@ -136,5 +140,33 @@
         align-items: center;
         justify-content: space-evenly;
       }
+
+      #workContentGrid {
+        margin: 2%;
+        display: grid;
+        grid-template-rows: 75% 25%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "project1 project1"
+        "project2 project3"
+        ;
+      }
+
+      #project1 {
+        grid-area: project1;
+        background-image: url("../images/02-portfolio-1.jpg");
+      }
+
+      #project2 {
+        grid-area: project2;
+        background-image: url("../images/02-portfolio-2.jpg");
+      }
+
+      #project3 {
+        grid-area: project3;
+        background-image: url("../images/02-portfolio-3.jpg");
+      }
+
+
 
     
