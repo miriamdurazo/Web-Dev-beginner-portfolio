@@ -83,7 +83,7 @@
     .page-wrapper {
         margin: 2.5%;
         display: grid;
-        grid-template-rows: 20% 50% 10%;
+        grid-template-rows: 200px 600px 100px;
         grid-template-columns: 20% 80%;
         grid-template-areas:
         "about aboutText"
@@ -122,7 +122,7 @@
       }
 
       .subheading-left {  
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-align: end;
         padding: 0.5rem;
         color: var(--dark-blue);
@@ -144,7 +144,7 @@
       #workContentGrid {
         margin: 2%;
         display: grid;
-        grid-template-rows: 75% 25%;
+        grid-template-rows: 70% 30%;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "project1 project1"
@@ -154,17 +154,32 @@
 
       #project1 {
         grid-area: project1;
-        background-image: url("../images/02-portfolio-1.jpg");
+        /* Photo by <a href="https://unsplash.com/@silvawebdesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan da Silva</a> on <a href="https://unsplash.com/photos/FO7kUmBYVi0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+        background-image: url("../images/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg"); 
       }
 
       #project2 {
         grid-area: project2;
-        background-image: url("../images/02-portfolio-2.jpg");
+        /* Photo by <a href="https://unsplash.com/@patrickperkins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Perkins</a> on <a href="https://unsplash.com/photos/ETRPjvb0KM0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+        background-image: url("../images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg");
       }
 
       #project3 {
         grid-area: project3;
         background-image: url("../images/02-portfolio-3.jpg");
+      }
+
+      .workGridArea {
+        border: 6px solid var(--purple);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 8px;
+        cursor: pointer;
+        display: grid;
+        align-content: end;
       }
 
 
