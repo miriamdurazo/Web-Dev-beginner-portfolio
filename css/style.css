@@ -196,6 +196,11 @@
         padding-top: 0.5rem;
       }
 
+      .workGridArea:hover {
+        opacity: 0.7;
+        transition: 0.2s;
+      }
+
 
 
 
