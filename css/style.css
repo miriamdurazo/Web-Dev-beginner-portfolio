@@ -154,9 +154,8 @@
 
       #project1 {
         grid-area: project1;
-        /* Photo by <a href="https://unsplash.com/@silvawebdesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan da Silva</a> on <a href="https://unsplash.com/photos/FO7kUmBYVi0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
-        background-image: url("../images/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg"); 
+       /* Photo by <a href="https://unsplash.com/@silvawebdesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan da Silva</a> on <a href="https://unsplash.com/photos/FO7kUmBYVi0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+        background-image: url("../images/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg");
       }
 
       #project2 {
@@ -170,6 +169,7 @@
         grid-area: project3;
         background-image: url("../images/02-portfolio-3.jpg");
       }
+
 
       .workGridArea {
         border: 6px solid var(--purple);
@@ -200,6 +200,7 @@
         opacity: 0.7;
         transition: 0.2s;
       }
+
 
 
 
