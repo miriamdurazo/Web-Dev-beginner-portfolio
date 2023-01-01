@@ -33,7 +33,13 @@
     display: flex;
     flex-direction: row;
     background-color: var(--dark-blue);
-    }
+  }
+
+  #navBar img {
+    /* background-image: url("../images/v1052-104.jpg"); */
+    max-height: 6%;
+    max-width: 6%;
+  }
 
   #navBar h1 {
     width: 25%;
@@ -42,8 +48,8 @@
     background-color: var(--bckgrnd-col);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
+    justify-content: center;
+    padding: 0.5rem;
   }
 
   #navigation {
@@ -57,7 +63,7 @@
      cursor: pointer;
      text-decoration: underline;
      text-decoration-thickness: 0.175em;
-     padding: 25px;
+     padding: 2rem;
      color: var(--light);
    }
 
